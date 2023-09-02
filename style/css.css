@@ -33,9 +33,8 @@ header .navegacao_primaria{
 header .navegacao_primaria li a{
     padding: 10px;
     color: #fcec0b;
-    font-size: 1.3rem;
     font-family: 'fonte' ;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 /* CSS da Primeira Imagem */
@@ -129,7 +128,7 @@ header .navegacao_primaria li a{
 
 .habilidade{
     text-align: center;
-    margin-top: 15%;
+    margin-top: 10%;
     padding: 40px;
     background-color:  #1a0e22; 
     font-family: 'fonte';
@@ -168,17 +167,28 @@ header .navegacao_primaria li a{
     color: #ffffff;
 }
 
-.akuma{
-    width: 100px;
-    margin-top: 1%;
-    margin-left: 60%;
+.akuma img{
+
+    margin-top: 7%;
+    width: 300px;
     animation: pular 2s ease-in-out infinite;
 }
 
-.redes{
-    text-decoration: none;
+.redes p{
+    
+    font-size: 25px;
+    max-width: 60%;
     font-family: 'fonte';
-}
+    animation: pular 2s alternate infinite;
+    margin-top: 5%;
+  }
 
+  .redes a{
+    font-size: 25px;
+    max-width: 60%;
+    font-family: 'fonte';
+    animation: pular 2s alternate infinite;
+    margin-top: 5%;
+  }
 
 
