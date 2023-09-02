@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'fonte';
+    src: url(../../fontes/Kurale-Regular.ttf);
+}
+
+/* CSS do Cabeçalho */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #0b2447;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .navegacao_primaria{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .navegacao_primaria li a{
+    padding: 10px;
+    color: #fcec0b;
+    font-size: 1.3rem;
+    font-family: 'fonte' ;
+    font-size: 30px;
+}
+
+/* CSS da Primeira Imagem */
+
+.personagem img{
+    width: 280px;
+    margin-top: 1%;
+    margin-left: 40%;
+    animation: pular 2s ease-in-out infinite;
+}
+
+.balao{
+    font-size: 30px;
+    font-family: 'fonte';
+    background-color: #0b2447;
+    color: #fcec0b;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10%;
+    animation: pular 2s ease-in-out infinite;
+    margin-left: 37%;
+}
+
+
+@keyframes pular{
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+@keyframes balaoPular {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* CSS da Segunda imagem*/
+.corpo h1{
+    text-align: center;
+    margin-top: 10%;
+    padding: 40px;
+    background-color:  #da9e13; 
+    font-family: 'fonte';
+    font-size: 40px;
+    color: rgb(2, 10, 2);
+}
+
+.imagem-wrapper img{
+    width: 280px;
+    margin-top: 15%;
+    animation: andaParaDireita 2s alternate infinite;
+}
+
+@keyframes andaParaDireita {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50px); 
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    margin-left: 40px;
+    font-size: 25px;
+    max-width: 60%;
+    font-family: 'fonte';
+    animation: andaParaDireita 2s alternate infinite;
+    margin-top: 5%;
+}
+
+/* Habilidades */
+
+.habilidade{
+    text-align: center;
+    margin-top: 15%;
+    padding: 40px;
+    background-color:  #1a0e22; 
+    font-family: 'fonte';
+    font-size: 40px;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.logo_cs img,
+.html img,
+.js img {
+    max-width: 100%;
+    margin-top: 35%;
+    width: 200px;
+}
+
+.logo_cs:hover img,
+.html:hover img,
+.js:hover img {
+    transform: scale(1.1);
+}
+
+.Contato{
+    text-align: center;
+    margin-top: 15%;
+    padding: 13px;
+    background-color:  #0760a8; 
+    font-family: 'fonte';
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.akuma{
+    width: 100px;
+    margin-top: 1%;
+    margin-left: 60%;
+    animation: pular 2s ease-in-out infinite;
+}
+
+.redes{
+    text-decoration: none;
+    font-family: 'fonte';
+}
+
+
+
