@@ -174,7 +174,7 @@ header .navegacao_primaria li a{
 .site-facul img{
     width: 200px;
     margin-top: 5%;
-    animation: pular 3s ease-in-out infinite;
+    animation: pular 4s ease-in-out infinite;
     margin-left: 40%;
 }
 
@@ -196,32 +196,37 @@ header .navegacao_primaria li a{
 }
 
 .whatsapp img{
-    width: 125px;
-    margin-top: 15%;
-    animation: pular 3s ease-in-out infinite;  
+    width: 100px;
+    margin-top: 89%;
+    animation: pular 4s ease-in-out infinite;  
 }
 
 .ins img{
-    width: 150px;
-    margin-top: 10%;
-    animation: pular 3s ease-in-out infinite;
+    width: 100px;
+    margin-top: 87%;
+    animation: pular 4s ease-in-out infinite;
 }
 
 .git img{
     width: 150px;
-    margin-top: 10%;
-    animation: pular 3s ease-in-out infinite;
+    margin-top: 40%;
+    animation: pular 4s ease-in-out infinite;
 }
 
+footer{
+    
+    height: 40vh;
+}
 .voltar-inicio{   
-        position:fixed;
-        top: 10px;
-        right: 20px;
-        text-decoration: none;
-        border: 1px solid #FFBD59;
-        background-color: #FFBD59;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-family: 'fonte';
-        font-size: 26px;
-    }
+    position:fixed;
+    top: 10px;
+    right: 20px;
+    text-decoration: none;
+    border: 1px solid #FFBD59;
+    background-color: #FFBD59;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'fonte';
+    font-size: 26px;
+}
+
