@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./portfolio/style.css">
 </head>
 <body>
         <header>
             <nav>
-                <ul class="navegacao_primaria">
-                    <li><a href="#Sobre mim">Sobre mim</a></li>        
-                    <li><a href="#Habilidades">Habilidades</a></li>
-                    <li><a href="#Projetos">Projetos</a></li>
-                    <li><a href="#Contato">Contato</a></li>
-                </ul>
+                <div class="nav">
+                    <span id="menu-drop" class="material-symbols-outlined" onclick="clickMenu()">
+                        menu
+                    </span>
+                    <ul class="navegacao_primaria" id="menu">
+                        <li><a href="#Sobre mim">Sobre mim</a></li>        
+                        <li><a href="#Habilidades">Habilidades</a></li>
+                        <li><a href="#Projetos">Projetos</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+
+                    </ul>
+                </div>
             </nav>
         </header>
 
-        <div class="balao" id="Inicio">
-             <p>Olá, me chamo Matheus</p>
-        </div>
-
+        
         <div class="personagem">
+            <div class="balao" id="Inicio">
+                 <p>Olá, me chamo Matheus</p>
+            </div>
+
              <img src="./imagens/pngwing.com.png" alt="Imagem Animada">
         </div>
 
@@ -31,20 +39,22 @@
         </div>
         
         <div class="container">
-            <div class="imagem-wrapper">
+            <!-- <div class="imagem-wrapper">
                  <img src="./imagens/pngwing.com (1).png" alt="Imagem Animada">
-            </div>
+            </div> -->
             
-            <div class="text">
-                 <p>Me chamo Matheus, tenho 21 anos. Desde muito jovem, sou apaixonado por tecnologia. Sempre tive vontade de entrar nesse ramo porque sempre fui curioso e tinha o desejo de entender como tudo isso funcionava. Gosto de estar sempre inovando em alguma coisa e buscando novos conhecimentos. Atualmente, estou estudando a área de desenvolvimento web e pretendo me especializar em outras áreas, além de realizar mais cursos.</p>
-            </div>
+          <!-- <div class="text">
+            <p>Bem-vindo! Eu sou Matheus, e aos 22 anos, minha paixão pela tecnologia se reflete neste portfólio. Aqui, compartilho meu trabalho e experiências na área de desenvolvimento web. Explore e descubra mais sobre o que faço.</p>
+
+            </div> -->
+            
         </div>
 
         <div class="habilidade" id="Habilidades">
              <h3>Habilidades</h3>
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
 
             <div class="html">
                 <img src="./imagens/html.png" alt="Imagem html">
@@ -58,7 +68,7 @@
                 <img src="./imagens/js.png" alt="Imagem JS">       
             </div> 
 
-        </div>
+        </div> -->
 
         <div class="projetos" id="Projetos">
             <h2>Projetos</h2>
@@ -66,12 +76,12 @@
 
         <div class="projetos-sites">
 
-            <div class="site-facul">
-                
-                <a href="##"><img src="./imagens/RECICLE (2).png" alt="Imagem logo do site"></a>
-
-            </div>
-
+            <ul class="sites">
+                <li><a href=""><img src="./imagens/Frates.png" alt=""></a></li>
+                <li><a href=""><img src="./imagens/CORE.png" alt=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+            
         </div>
         
         

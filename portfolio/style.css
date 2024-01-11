@@ -8,31 +8,30 @@
 html{
     scroll-behavior: smooth;
 }
+
 *{
     padding: 0%;
     margin: 0%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     list-style: none;
     text-decoration: none;
 }
+
 body{
     max-width: 1200px;
     margin: 0 auto;
     min-width: none;
 }
 
-header{
+header .navegacao_primaria{
+    display: flex;
+    gap: 10px;
+    align-items: center;
     background-color: #0b2447;
     padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-header .navegacao_primaria{
-    display: flex;
-    gap: 10px;
-    align-items: center;
 }
 
 header .navegacao_primaria li a{
@@ -47,7 +46,7 @@ header .navegacao_primaria li a{
     width: 280px;
     margin-top: 1%;
     margin-left: 40%;
-    animation: pular 2s ease-in-out infinite;
+    animation: pular 3.2s ease-in-out infinite;
 }
 
 .balao{
@@ -59,7 +58,7 @@ header .navegacao_primaria li a{
     padding: 10px 20px;
     display: inline-block;
     margin-top: 10%;
-    animation: pular 2s ease-in-out infinite;
+    animation: pular 3.2s ease-in-out infinite;
     margin-left: 37%;
 }
 
@@ -99,21 +98,6 @@ header .navegacao_primaria li a{
     color: rgb(2, 10, 2);
 }
 
-.imagem-wrapper img{
-    width: 280px;
-    margin-top: 15%;
-    animation: andaParaDireita 2s alternate infinite;
-}
-
-@keyframes andaParaDireita {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(50px); 
-    }
-}
-
 .container{
     display: flex;
     align-items: center;
@@ -124,7 +108,7 @@ header .navegacao_primaria li a{
     font-size: 25px;
     max-width: 60%;
     font-family: 'fonte';
-    animation: andaParaDireita 2s alternate infinite;
+    animation: pular 3.2s ease-in-out infinite;
     margin-top: 5%;
 }
 
@@ -161,21 +145,35 @@ header .navegacao_primaria li a{
 }
 
 /* Projetos */
+
+.projetos-sites{
+    justify-content:center;
+    display: flex;
+    align-items:center ;
+    gap: 20px;
+}
+
+.sites{
+    justify-content:center;
+    display: flex;
+    align-items:center ;
+    animation: pular 4s ease-in-out infinite;
+
+}
+
+.sites img{
+    width: 33vh;
+    
+}
+
 .projetos{
     text-align: center;
     margin-top: 8%;
     padding: 30px;
-    background-color:  #0760a8c2; 
+    background-color:  #0760a8c2;
     font-family: 'fonte';
     font-size: 40px;
     color: #ffffff;
-}
-
-.site-facul img{
-    width: 200px;
-    margin-top: 5%;
-    animation: pular 4s ease-in-out infinite;
-    margin-left: 40%;
 }
 
 /* Roda pé*/
@@ -217,6 +215,18 @@ footer{
     
     height: 40vh;
 }
+
+.menu{
+    display: block;
+}
+
+#menu-drop {
+   display: none;
+   text-align: center;
+   cursor: pointer;
+   padding: 10px;
+}
+
 .voltar-inicio{   
     position:fixed;
     top: 10px;
@@ -230,3 +240,109 @@ footer{
     font-size: 26px;
 }
 
+@media (max-width: 730px){
+    body{
+       max-width: 730px;
+    }
+    #menu{
+        display: none;
+    }
+
+    #menu-drop {
+        font-size: 40px;
+        display: block;
+        text-align: end;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #0b2447;
+        color: white;
+     } 
+
+    .voltar-inicio{
+        display: none;
+    }
+
+    .personagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2vh;
+    }
+
+    .personagem img{
+        width: 25vh;
+        margin-left: 0%;
+    }
+
+    .balao{
+        font-size: 30px;
+        font-family: 'fonte';
+        background-color: #0b2447;
+        color: #fcec0b;
+        border-radius: 10px;
+        padding: 10px 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 10%;
+        margin-right: 35%;
+    } 
+
+    .container{
+        margin-top: 26px;
+    }
+
+    .text{
+    font-size: 25px;
+    max-width: 60%;
+    font-family: 'fonte';
+    animation: pular 3.2s ease-in-out infinite;
+    margin-top: 5%;
+    }
+
+    .habilidade{
+        text-align: center;
+        margin-top: 8%;
+        padding: 30px;
+        background-color:  #30193fe0; 
+        font-family: 'fonte';
+        font-size: 40px;
+        color: #fff;
+    }
+    
+    .sites img{
+        width: 27vh; 
+        margin-top: 10px;
+    }
+    
+    .projetos{
+        font-size: 28px;
+        padding: 13px;
+    }
+
+    .contatos h2{
+        font-size: 32px;
+        padding: 30px;
+        color: #fff;
+    }
+
+    .imagens-ctt{
+        display: flex;
+        justify-content: center;
+    }
+
+    .whatsapp img{
+        width: 10vh;
+        animation: none; 
+    }
+    
+    .ins img{
+        width: 10vb;
+        animation: none;
+    }
+    
+    .git img{
+        width: 15vh;
+        animation: none; 
+    }
+}
