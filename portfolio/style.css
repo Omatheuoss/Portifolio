@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'fonte'; */
-    src: url(../../fontes/Xilla\ Bold.otf);
-}
-
-
 /* CSS do Cabeçalho */
 html{
     scroll-behavior: smooth;
@@ -15,7 +9,7 @@ html{
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -29,7 +23,7 @@ header .navegacao_primaria{
     background-color: #ffffff;
     padding: 30px;
     justify-content: end;
-    margin-right: ;
+    
 }
 
 header .navegacao_primaria li a{
@@ -46,18 +40,18 @@ header .navegacao_primaria li a:hover{
 
 /* CSS da Primeira Imagem */
 
-.personagem p{
+.inicio-corpo p{
     text-align: justify;
     margin-left: 13%;
     font-size: 50px;
-    
+    color: #0b2447;
 }
 
-.personagem{
+.inicio-corpo{
     margin-top: 30vh;
     display: inline-block;
     width: 70vw;
-    height: 63vh;
+    height: 55vh;
 
 }
 
@@ -129,109 +123,151 @@ button:hover {
 }
 
 /* Habilidades */
-.habilidade{
-    text-align: center;
-    margin-top: 8%;
-    background-color:  #30193fe0; 
-    font-size: 40px;
-    color: #fff;
-}
-
-.container{
-    display: flex;
-    gap: 20px; 
-    justify-content: center;
+.skills{
+    background-color: #dae4f7;
     
 }
 
-.logo_cs img,
-.html img,
-.js img {
-    max-width: 100%;
-    margin-top: 20%;
-    width: 180px;
+.tertiary_title{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
 }
 
-.logo_cs:hover img,
-.html:hover img,
-.js:hover img {
-    transform: scale(1.1);
+.description{
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.skills .skills_content{
+    padding: 6rem 4rem;
+}
+
+.skills .skills_content .description{
+    max-width: 56rem;
+    margin: 0 auto 6rem;
+}
+
+.skills .skills_content ul{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.skills .skills_content ul li .image-container{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.skills .skills_content ul li h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+    align-items: center;
+    text-align: center;
 }
 
 /* Projetos */
 
-.projetos-sites{
-    justify-content:center;
+.projects {
+    margin-bottom: 16rem;
+    scroll-margin-top: 15rem;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+  }
+  
+  .projects .projects__content {
+    max-width: 56rem;
+    text-align: center;
+    margin: 0 auto 6rem;
+  }
+  
+  .projects ul li {
     display: flex;
-    align-items:center ;
-    gap: 20px;
-}
-
-.sites{
     justify-content:center;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .projects ul li.projects__reversed-list {
+    flex-direction: row-reverse;
+  }
+  
+  .projects ul li:not(:last-of-type) {
+    margin-bottom: 12rem;
+  }
+  
+  .projects ul li .image img {
+    width: 80%;
+    min-width: 25rem;
+    max-width: 47rem;
+    height: auto;
+  }
+  
+  .projects ul li .projects__info {
+    max-width: 47rem;
+    font-size: 1.6rem;
+  }
+  
+  .projects ul li .projects__info p {
+    margin: 1rem 0 4rem;
+  }
+  
+  .projects ul li .projects__info a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.3rem;
+  }
+
+
+footer {
+    background-color: var(--light-tertiary-color);
+    align-items: center;
+    text-align: center;
     display: flex;
-    align-items:center ;
-    animation: pular 4s ease-in-out infinite;
-
-}
-
-.sites img{
-    width: 33vh;
+    flex-direction: column;
+    justify-content: center; 
+    margin-bottom: 10vh;
+    height: 15vh; 
     
 }
 
-.projetos{
+footer .footer__content {
     text-align: center;
-    margin-top: 8%;
-    padding: 30px;
-    background-color:  #0760a8c2;
-    font-family: 'fonte';
-    font-size: 40px;
-    color: #ffffff;
+    padding: 6rem 2rem 1rem;
+    max-width: 47rem;
 }
 
-/* Roda pé*/
-.contatos h2{
-    text-align: center;
-    margin-top: 8%;
-    padding: 30px;
-    background-color:  #b3560adc; 
-    font-family: 'fonte';
-    font-size: 40px;
-    color: #fff;
+#footer h2{
+    color: #0b2447
+
 }
 
-.imagens-ctt{
-    display: flex;
-    gap: 60px; 
-    justify-content: center;
-}
-
-.whatsapp img{
-    width: 100px;
-    margin-top: 89%;
-    animation: pular 4s ease-in-out infinite;  
-}
-
-.ins img{
-    width: 100px;
-    margin-top: 87%;
-    animation: pular 4s ease-in-out infinite;
-}
-
-.git img{
-    width: 150px;
-    margin-top: 40%;
-    animation: pular 4s ease-in-out infinite;
-}
-
-footer{
-    
-    height: 40vh;
-}
-
-.menu{
+footer .footer__content .footer__contact span {
     display: block;
+    font-weight: 500;
+}
+
+footer .footer__content ul li {
+    display: inline-block;
+}
+
+footer .footer__content ul a {
+    display: inline-block;
+    padding: 1rem;
+}
+
+footer .footer__content .footer__copyright {
+    font-size: 1.4rem;
 }
 
 #menu-drop {
@@ -241,22 +277,9 @@ footer{
    padding: 10px;
 }
 
-.voltar-inicio{   
-    position:fixed;
-    top: 50vh;
-    right: 20px;
-    text-decoration: none;
-    border: 1px solid #FFBD59;
-    background-color: #FFBD59;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: 'fonte';
-    font-size: 26px;
-}
-
-@media (max-width: 730px){
+@media only screen and (max-width: 768px){
     body{
-       max-width: 730px;
+       max-width: 768px;
     }
     #menu{
         display: none;
@@ -272,91 +295,16 @@ footer{
         color: white;
      } 
 
-    .voltar-inicio{
-        display: none;
-    }
-
-    .personagem {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2vh;
-    }
-
-    .personagem img{
-        width: 25vh;
-        margin-left: 0%;
-    }
-
-    .balao{
-        font-size: 30px;
-        font-family: 'fonte';
-        background-color: #0b2447;
-        color: #fcec0b;
-        border-radius: 10px;
-        padding: 10px 30px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        margin-top: 10%;
-        margin-right: 35%;
-    } 
-
-    .container{
-        margin-top: 26px;
-    }
-
-    .text{
-    font-size: 25px;
-    max-width: 60%;
-    font-family: 'fonte';
-    animation: pular 3.2s ease-in-out infinite;
-    margin-top: 5%;
-    }
-
-    .habilidade{
-        text-align: center;
-        margin-top: 8%;
-        padding: 30px;
-        background-color:  #30193fe0; 
-        font-family: 'fonte';
-        font-size: 40px;
-        color: #fff;
-    }
-    
-    .sites img{
-        width: 27vh; 
-        margin-top: 10px;
-    }
-    
-    .projetos{
-        font-size: 28px;
-        padding: 13px;
-    }
-
-    .contatos h2{
-        font-size: 32px;
-        padding: 30px;
-        color: #fff;
-    }
-
-    .imagens-ctt{
-        display: flex;
-        justify-content: center;
-    }
-
-    .whatsapp img{
-        width: 10vh;
-        animation: none; 
-    }
-    
-    .ins img{
-        width: 10vb;
-        animation: none;
-    }
-    
-    .git img{
-        width: 15vh;
-        animation: none; 
-    }
+     .projects ul li,
+     .projects ul li.projects__reversed-list {
+       flex-direction: column;
+     }
+   
+     .projects ul li .projects__info {
+       max-width: 66rem;
+     }
+   
+     .projects ul li .image img {
+       min-width: auto;
+     }
 }
