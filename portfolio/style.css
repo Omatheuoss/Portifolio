@@ -23,13 +23,11 @@ header .navegacao_primaria{
     background-color: #ffffff;
     padding: 30px;
     justify-content: end;
-    
 }
 
 header .navegacao_primaria li a{
     padding: 10px;
     color: #000000;
-    font-family: 'fonte' ;
     font-size: 27px;
     margin-right:8vh;
 }
@@ -38,7 +36,7 @@ header .navegacao_primaria li a:hover{
     color:#315cfd;
 }
 
-/* CSS da Primeira Imagem */
+/* Inicio*/
 
 .inicio-corpo p{
     text-align: justify;
@@ -66,14 +64,17 @@ button {
     font-size: 1.0em;
     font-weight: 550;
     margin-left: 14%;
+    
 }
-  
+
 button:hover {
     background: #315cfd;
     color: white;
     font-size: 1.1em;
+    
 }
 
+/* Sobre mim */
 .corpo {
     display: flex;
     justify-content: space-between;
@@ -106,7 +107,7 @@ button:hover {
 }
 
 .about h2 {
-    font-size: 50px;
+    font-size: 2rem;
     color: #0b2447;
 }
 
@@ -118,7 +119,7 @@ button:hover {
 }
 
 .texto-historia h2{
-    font-size: 50px;
+    font-size: 2rem;
     color: #0b2447;
 }
 
@@ -228,7 +229,7 @@ button:hover {
     font-size: 1.3rem;
   }
 
-
+/* Rodapé */
 footer {
     background-color: var(--light-tertiary-color);
     align-items: center;
@@ -247,7 +248,7 @@ footer .footer__content {
     max-width: 47rem;
 }
 
-#footer h2{
+footer h2{
     color: #0b2447
 
 }
