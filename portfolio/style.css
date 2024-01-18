@@ -271,7 +271,7 @@ footer .footer__content .footer__copyright {
     font-size: 1.3rem;
 }
 
-.navbar_mobile{
+#menu-drop{
    display: none;
 }
 
@@ -279,8 +279,12 @@ footer .footer__content .footer__copyright {
     body{
        max-width: 768px;
     }
+
     #menu{
         display: none;
+        text-align: end;
+        /* margin: 0;
+        padding: 10px; */
     }
 
     #menu-drop {
@@ -291,9 +295,16 @@ footer .footer__content .footer__copyright {
         padding: 10px;
         background-color: #0b2447;
         color: white;
+        margin: 0;
      } 
 
-     
+     header .navegacao_primaria{
+        padding: 0;
+     }
+
+     header .navegacao_primaria li a{
+        margin-right: 0;
+     }
     .inicio-corpo{
     margin-top: 3vh;
     width: 70vw;
@@ -357,38 +368,6 @@ footer .footer__content .footer__copyright {
         font-size: 1.1rem;
     }
 
-    .navbar_mobile{
-        display: flex;
-        text-align: center;
-        cursor: pointer;
-        padding: 10px;
-     }
     
-     .navbar_mobile img{
-        width: 3.6rem;
-        height: 3.6rem;
-     }
 
-     .mobile_links{
-        display: flex;
-        flex-direction: column;
-        background-color: var(white);
-        width: 100%;
-        position: absolute;
-        top: 98%;
-        left: 0;
-        padding: 1rem 0;
-        box-shadow: 0 0.4rem 0.5rem black;
-        z-index: 1;
-     }
-
-     .mobile_links .mobile_links li{
-        margin-right: 0;
-     }
-
-     .mobile_links .mobile_links li a{
-        padding: 1rem;
-        display: block;
-        text-align: center;
-     }
 }
