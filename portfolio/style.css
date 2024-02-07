@@ -302,9 +302,10 @@ footer .footer__content .footer__copyright {
         padding: 0;
      }
 
-     header .navegacao_primaria li a{
+     header .navegacao_primaria a{
         margin-right: 0;
      }
+     
     .inicio-corpo{
     margin-top: 3vh;
     width: 70vw;
